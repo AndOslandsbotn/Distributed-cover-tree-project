@@ -1,0 +1,21 @@
+general:
+  radius_reduce_factor: 2
+  results_folder: 'Results'
+  logg_folder: 'Logg'
+performance:
+  loop_data: 2
+  num_learning_workers: 10
+  num_splitting_workers: 1
+  splitterq_batch_size: 100000
+  learnerq_batch_size: 10
+performancelogging:
+  logg_freq: 1  # Logg logg_freq times per second
+  qsize_ping_freq: 100  # Check qsize qsize_ping_freq times per second
+learningnode:
+  threshold: 0.99
+  alpha: 0.5  # alpha= 0.5 means cover fraction is estimated as average over 2 iterations
+  kmeans_refinement: True
+  kmeans_sample_size: 1000
+  kmeanspp_conditioning: True
+  augmented_find_centers_search: False
+  min_items_len: 10
