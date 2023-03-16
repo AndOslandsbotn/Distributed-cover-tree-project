@@ -1,0 +1,17 @@
+[1] Ray Install using miniconda3
+
+  wget https://urldefense.com/v3/__https://repo.anaconda.com/miniconda/Miniconda3-py37_4.11.0-Linux-x86_64.sh__;!!Mih3wA!GkJRww5IXIkWTEezlWK-M4STxDk2_LpqydaH9nV-vdfZuLXoAYen1VfPFEGdfEs6aD93WtfZOZo-ZjdXHecypw$ 
+  sh Miniconda3-py37_4.11.0-Linux-x86_64.sh 
+  . miniconda3/etc/profile.d/conda.sh 
+  conda create --name ray python==3.7.11
+  conda activate ray
+  pip install ray
+  conda install pytorch
+
+[2] Clone the NERSC SLURM setup:
+
+  git clone https://urldefense.com/v3/__https://github.com/NERSC/slurm-ray-cluster.git__;!!Mih3wA!GkJRww5IXIkWTEezlWK-M4STxDk2_LpqydaH9nV-vdfZuLXoAYen1VfPFEGdfEs6aD93WtfZOZo-ZjelS6WDhA$ 
+  cd slurm-ray-cluster/
+
+[3] Example job submission script: submit-ray-cluster.sbatch
+ 
